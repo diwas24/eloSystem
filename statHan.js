@@ -60,8 +60,7 @@ class statPoly {
       });
     this.svg.appendChild(polygon);
   }
-  createLine(r=this.radius,attr={stroke:"black","stroke-opacity":0.5}) {
-    const ver = this.maxVertx();
+  createLine(ver=this.maxVertx(),attr={stroke:"black","stroke-opacity":0.5}) {
     ver.map(vrx=> {
       const line = document.createElementNS("http://www.w3.org/2000/svg","line");
       line.setAttribute("x1", `${this.center.x}`);
@@ -69,7 +68,7 @@ class statPoly {
       line.setAttribute("x2", vrx.x);
       line.setAttribute("y2", vrx.y);
       Object.keys(attr).map(key => {
-        polygon.setAttribute(key, attr[key]);
+        line.setAttribute(key, attr[key]);
       });
       this.svg.appendChild(line);
     });
@@ -81,7 +80,9 @@ class statPoly {
     this.createLine(undefined,this.baseAttr.lineStyle);
   }
   datPoly() {
-    this.createPolygon(undefined,{fill:"orange","fill-opacity":"0.5",stroke:"none"},this.initDVer())
+    var ver = this.initDVer()
+    this.createPolygon(undefined,{fill:"orange","fill-opacity":"0.5",stroke:"none"},ver)
+    this.createLine(ver,{stroke:"orange","stroke-opacity":"0.6"})
   }
   outPut() {
     this.clearBx();
@@ -90,12 +91,21 @@ class statPoly {
   }
 }
 
-{
-const svg = document.getElementById("polygon");
-const statAttr = { flx: 50, str: 30, dex: 30, agl: 33, end: 23, sta: 34,ref:34 };
-const phy = new statPoly(svg);
-phy.setStat(statAttr);
-phy.setDimesion(200);
-phy.setBaseAttr({div:15,style:{fill:"blue",stroke:"blue","fill-opacity":"0.1","stroke-opacity":"0.3"},lineStyle:{stroke:"blue","stroke-opacity":"0.3"}})
-phy.outPut();
-}
+// {
+// const svg = document.getElementById("phy");
+// const statAttr = { flx: 50, str: 30, dex: 30, agl: 33, end: 23, sta: 34,ref:34 };
+// const phy = new statPoly(svg);
+// phy.setStat(statAttr);
+// phy.setDimesion(200);
+// phy.setBaseAttr({div:15,style:{fill:"blue",stroke:"blue","fill-opacity":"0.1","stroke-opacity":"0.3"},lineStyle:{stroke:"blue","stroke-opacity":"0.3"}})
+// phy.outPut();
+// }
+// {
+//   const svg = document.getElementById("men");
+//   const statAttr = { flx: 50, str: 80, dex: 70, agl: 50, end: 50, sta: 40};
+//   const men = new statPoly(svg);
+//   men.setStat(statAttr);
+//   men.setDimesion(200);
+//   men.setBaseAttr({div:15,style:{fill:"blue",stroke:"blue","fill-opacity":"0.1","stroke-opacity":"0.3"},lineStyle:{stroke:"blue","stroke-opacity":"0.3"}})
+//   men.outPut();
+// }
