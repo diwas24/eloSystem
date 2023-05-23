@@ -1,0 +1,42 @@
+{
+    "phy":{
+        "stat":{
+            "strength":{},
+            "stamina":{},
+            "agility":{},
+            "endurance":{},
+            "reflex":{},
+            "flexibility":{},
+            "perception":{},
+            "xFac":{}
+        },
+        "gain":{
+            "yoga":{},
+            "bdExe":{},
+            "wtExe":{},
+            "xFac":{}
+
+        },
+        "focus":{
+            "aspect":{
+                "skin":{},
+                "muscles":{},
+                "blood":{},
+                "meridians":{},
+                "bones":{},
+                "fat":{},
+                "equlibrium":{},
+                "xFac":{}
+            },
+            "area":{
+                "joints":{},
+                "core":{},
+                "shoulder":{},
+                "lowerbd":{},
+                "upperbd":{},
+                "xFac":{}
+            }
+            
+        }
+    }
+}
