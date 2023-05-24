@@ -1,42 +1,36 @@
 {
-    "phy":{
-        "stat":{
-            "strength":{},
-            "stamina":{},
-            "agility":{},
-            "endurance":{},
-            "reflex":{},
-            "flexibility":{},
-            "perception":{},
-            "xFac":{}
-        },
-        "gain":{
-            "yoga":{},
-            "bdExe":{},
-            "wtExe":{},
-            "xFac":{}
-
-        },
-        "focus":{
-            "aspect":{
-                "skin":{},
-                "muscles":{},
-                "blood":{},
-                "meridians":{},
-                "bones":{},
-                "fat":{},
-                "equlibrium":{},
-                "xFac":{}
-            },
-            "area":{
-                "joints":{},
-                "core":{},
-                "shoulder":{},
-                "lowerbd":{},
-                "upperbd":{},
-                "xFac":{}
-            }
-            
-        }
+  "phy": {
+    "stat": {
+      "strength": { "val": 100, "measure": {} },
+      "stamina": { "val": 100, "measure": {} },
+      "agility": { "val": 100, "measure": {} },
+      "endurance": { "val": 100, "measure": {} },
+      "reflex": { "val": 100, "measure": {} },
+      "flexibility": { "val": 100, "measure": {} },
+      "perception": { "val": 100, "measure": {} }
+    },
+    "gained": {
+      "yoga": {"method":[]},
+      "bdExe": {"method":[]},
+      "wtExe": {"method":[]}
+    },
+    "focuses": {
+      "aspect": {
+        "skin": {"measure":[]},
+        "muscles": {"measure":[]},
+        "blood": {"measure":[]},
+        "meridians": {"measure":[]},
+        "bones": {"measure":[]},
+        "fat": {"measure":[]},
+        "equlibrium": {"measure":[]}
+      },
+      "areas": {
+        "joints": {"method":[]},
+        "core": {"method":[]},
+        "shoulder": {"method":[]},
+        "lowerbd": {"method":[]},
+        "upperbd": {"method":[]}
+      }
     }
+  }
 }
