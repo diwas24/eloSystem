@@ -1,5 +1,14 @@
 .cont{
-    /* border: 1px solid rgba(0, 238, 255, 0.6); */
+    /* border: 1px solid #00eeff99; */
     display: inline-block;
-    /* background: rgba(0, 255, 213, 0.445); */
+    /* width: 50%; */
+}
+.stArea{
+    /* border: 1px solid #00eeff99; */
+    /* width: fit-content; */
+}
+.work{
+    border: 3px solid #00eeff99 ;
+    border-radius: 5px;
+    padding: 5px 15px 5px 15px;
 }

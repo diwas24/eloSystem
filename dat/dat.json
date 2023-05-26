@@ -25,12 +25,25 @@
         "equlibrium": {"measure":[]}
       },
       "areas": {
-        "joints": {"method":[]},
-        "core": {"method":[]},
-        "shoulder": {"method":[]},
-        "lowerbd": {"method":[]},
-        "upperbd": {"method":[]}
+        "calves":{},
+        "Thighs":{},
+        "glutes":{},
+        "hamstring":{},
+        "core": {},
+        "back":{},
+        "Biceps":{},
+        "chest":{},
+        "shoulder":{},
+        "triceps":{},
+        "Abdominals":{},
+        "Forearms":{},
+        "wrist":{}
       }
     }
+  },
+  "works":{
+    "work1":{"area":[]},
+    "work2":{"area":[]},
+    "work3":{"area":[]}
   }
 }

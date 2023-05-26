@@ -1,0 +1,10 @@
+{
+    "phy":{
+        "reln":{
+            "type":["PushUp","Plank","WallSit","PullUp","Squat","Lunge"]
+        }
+    },
+    "men":{},
+    "emo":{},
+    "sco":{}
+}
