@@ -10,40 +10,40 @@
       "perception": { "val": 100, "measure": {} }
     },
     "gained": {
-      "yoga": {"method":[]},
-      "bdExe": {"method":[]},
-      "wtExe": {"method":[]}
+      "yoga": { "method": [] },
+      "bdExe": { "method": [] },
+      "wtExe": { "method": [] }
     },
     "focuses": {
       "aspect": {
-        "skin": {"measure":[]},
-        "muscles": {"measure":[]},
-        "blood": {"measure":[]},
-        "meridians": {"measure":[]},
-        "bones": {"measure":[]},
-        "fat": {"measure":[]},
-        "equlibrium": {"measure":[]}
+        "skin": { "measure": [] },
+        "muscles": { "measure": [] },
+        "blood": { "measure": [] },
+        "meridians": { "measure": [] },
+        "bones": { "measure": [] },
+        "fat": { "measure": [] },
+        "equlibrium": { "measure": [] }
       },
       "areas": {
-        "calves":{},
-        "Thighs":{},
-        "glutes":{},
-        "hamstring":{},
+        "calves": {},
+        "Thighs": {},
+        "glutes": {},
+        "hamstring": {},
         "core": {},
-        "back":{},
-        "Biceps":{},
-        "chest":{},
-        "shoulder":{},
-        "triceps":{},
-        "Abdominals":{},
-        "Forearms":{},
-        "wrist":{}
+        "back": {},
+        "Biceps": {},
+        "chest": {},
+        "shoulder": {},
+        "triceps": {},
+        "Abdominals": {},
+        "Forearms": {},
+        "wrist": {}
       }
     }
   },
-  "works":{
-    "work1":{"area":[]},
-    "work2":{"area":[]},
-    "work3":{"area":[]}
+  "works": {
+    "work1": { "area": [] },
+    "work2": { "area": [] },
+    "work3": { "area": [] }
   }
 }

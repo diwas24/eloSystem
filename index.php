@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <?php include 'static.php' ?>
 </head>
+
 <body>
-   <div class="cont">
-    <svg id="phy"></svg>
-    <svg id="men"></svg>
-   </div>
-   <script src="func.js"></script> 
-   <script src="statHan.js"></script> 
-   <script src="script.js"></script> 
+    <div class="cont">
+        <svg id="phy"></svg>
+        <svg id="men"></svg>
+    </div>
 </body>
+
 </html>
