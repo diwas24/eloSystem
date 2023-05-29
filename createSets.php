@@ -13,24 +13,26 @@
   <body>
     <br />
     <div class="container">
-      <form>
-        <div class="row">
+      <form onsubmit="addSets(event,this)">
+        <div class="row g-3">
           <div class="col-md-3">
             <input
               type="text"
+              name="setName"
               class="form-control"
               placeholder="Set Name"
               aria-label="Set name"
             />
           </div>
-          <div class="input-group col mb-3">
+          <div class="input-group col">
             <div class="searchInput">
               <input
                 type="text"
+                name="work"
                 class="form-control"
                 oninput="sugg(this)"
-                placeholder="Username"
-                aria-label="Username"
+                placeholder="Add Work"
+                aria-label="Add Work"
                 aria-describedby="basic-addon1"
               />
               <div class="resultBox"></div>
@@ -40,6 +42,8 @@
             ></span>
           </div>
         </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </div>
   </body>

@@ -14,10 +14,9 @@ function addWork(e, t) {
       data = JSON.parse(data);
       if (!data.success) {
         $(t.querySelector(".res")).html("Error");
-        console.log(data);
       } else {
         $(t.querySelector(".res")).html("success");
-        console.log(data);
+        t.reset();
       }
     },
   });
@@ -30,21 +29,6 @@ function addSets(e, t) {
     data[key] = value;
   }
   console.log(data);
-  // $.ajax({
-  //   type: "POST",
-  //   url: "config/addSets.php",
-  //   data: data,
-  //   success: (data) => {
-  //     data = JSON.parse(data);
-  //     if (!data.success) {
-  //       $(t.querySelector(".res")).html("Error");
-  //       console.log(data);
-  //     } else {
-  //       $(t.querySelector(".res")).html("success");
-  //       console.log(data);
-  //     }
-  //   },
-  // });
 }
 function getWorks() {
   return new Promise((resolve, reject) => {
@@ -91,14 +75,11 @@ function sugg(t) {
           .startsWith(userData.toLocaleLowerCase());
       });
       emptyArray = emptyArray.map((data) => {
-        return (data = "<li>" + data + "</li>");
+        var text = '<li class="" id="">' + data + "</i></li>";
+        return (data = text);
       });
       searchInput.classList.add("act");
       showSuggestions(emptyArray, resultBox);
-      let allList = resultBox.querySelectorAll("li");
-      for (let i = 0; i < allList.length; i++) {
-        allList[i].setAttribute("onclick", "select(this)");
-      }
     } else {
       searchInput.classList.remove("act");
     }
@@ -114,3 +95,4 @@ function showSuggestions(list, rs) {
   }
   rs.innerHTML = listData;
 }
+function addToSet() {}
