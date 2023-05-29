@@ -11,34 +11,33 @@
   </head>
 
   <body>
-    <!-- <form class="form row g-3" onsubmit="addSets(event,this)">
-      <div class="col-md-6">
-        <input type="text" class="form-control" name="setName" />
-      </div>
-      
-    </form> -->
-    <div class="">
+    <br />
+    <div class="container">
       <form>
         <div class="row">
           <div class="col-md-3">
             <input
               type="text"
-              class="form-control form-control-lg"
-              placeholder="First name"
-              aria-label="First name"
+              class="form-control"
+              placeholder="Set Name"
+              aria-label="Set name"
             />
           </div>
-          <div class="col-md-3">
-            <div class="searchInput col">
+          <div class="input-group col mb-3">
+            <div class="searchInput">
               <input
                 type="text"
-                class="form-control form-control-lg"
+                class="form-control"
                 oninput="sugg(this)"
-                placeholder="Add Work..."
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
               />
               <div class="resultBox"></div>
-              <div class="icon"><i class="fas fa-search"></i></div>
             </div>
+            <span class="input-group-text" id="basic-addon1"
+              ><i class="fa-solid fa-plus"></i
+            ></span>
           </div>
         </div>
       </form>

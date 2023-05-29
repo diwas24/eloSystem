@@ -58,7 +58,6 @@ function getWorks() {
         success: (res) => {
           res = JSON.parse(res);
           if (res.success) {
-            console.info("Success");
             const sgg = new Array();
             res.data.map((data) => {
               sgg.push(data.title);
@@ -94,14 +93,14 @@ function sugg(t) {
       emptyArray = emptyArray.map((data) => {
         return (data = "<li>" + data + "</li>");
       });
-      searchInput.classList.add("active");
+      searchInput.classList.add("act");
       showSuggestions(emptyArray, resultBox);
       let allList = resultBox.querySelectorAll("li");
       for (let i = 0; i < allList.length; i++) {
         allList[i].setAttribute("onclick", "select(this)");
       }
     } else {
-      searchInput.classList.remove("active");
+      searchInput.classList.remove("act");
     }
   });
 }
