@@ -3,20 +3,25 @@
     $data['title'] = $_POST['title']??null;
     $data['rep'] = $_POST['rep']??null;
     $data['desc'] = $_POST['desc']??null;
+    $data['level'] = $_POST['level']??null;
+    $return['success']=true;
     // ERROR CHECKING
     foreach ($data as $key => $value) {
         if (empty($value)) {
-            $return['error']="Empty Value";
+            $return['success']=false;
             break;            
         }
     }
     // NO ERROR
-    if (!isset($return['error'])) {
+    if ($return['success']) {
         // insert into table work
-        $sql = "INSERT INTO work (title,rep,descp) VALUES ('$data[title]','$data[rep]','$data[desc]')";
+        $sql = "INSERT INTO works (title,rep,descp,level) VALUES ('$data[title]','$data[rep]','$data[desc]','$data[level]')";
         $result = $conn->query($sql);
         if ($result) {
-            $return['success'] = true;
+            $return['success'] = $result;
+        }
+        else{
+            $return['success']=false;
         }
     }
     echo json_encode($return);
