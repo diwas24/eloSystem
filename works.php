@@ -22,11 +22,11 @@
                 </select><br /><br />
                 <select name="level">
                     <option value="" disabled selected>Level</option>
-                    <option value="warmUp">Warm Up</option>
-                    <option value="Easy">Easy</option>
-                    <option value="Hard">Hard</option>
-                    <option value="Extreme">Extreme</option>
-                    <option value="Impossible">Impossible</option>
+                    <option value="0">Warm Up</option>
+                    <option value="1">Easy</option>
+                    <option value="2">Hard</option>
+                    <option value="3">Extreme</option>
+                    <option value="4">Impossible</option>
                 </select><br /><br />
                 <textarea name="desc" cols="70" required="true" rows="8" placeholder="description"></textarea><br /><br />
                 <input type="submit" value="add" />
